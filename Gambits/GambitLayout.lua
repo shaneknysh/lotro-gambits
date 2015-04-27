@@ -6,8 +6,6 @@ GambitLayout = {
         Gambits = {
             1091471248, -- Shield Mastery
             1091471266, -- Dance Of War
-            1091744834, -- Call to Battle
-            1091469968, -- Goad
             1091471252, -- Exultation of Battle
         }
     },
@@ -37,25 +35,17 @@ GambitLayout = {
     },
 
     {
-        GroupName = "AoE Morale Drain",
-        Enabled = true,
-        Placement = "left",
-        Gambits = {
-            1091471255, -- Fierce Resolve
-            1091471249, -- Resolution
-            1091471252, -- Exultation of Battle
-        }
-    },
-
-    {
         GroupName = "Avoidances",
         Enabled = true,
         Placement = "left",
         Gambits = {
             1091469970, -- Defensive Strike
-            1091471257, -- Shield Up
             1091471248, -- Shield Mastery
             1091659503, -- Shield Tactics
+            1091469960, -- Impressive Flourish
+            1091471254, -- Maddening Strike
+            1091471266, -- Dance Of War
+            1091478183, -- Conviction
         }
     },
 
@@ -104,29 +94,17 @@ GambitLayout = {
             1091471237, -- Surety of Death
             1091478186, -- Desolation
             1091744833, -- Resounding Challenge
-            1091744834, -- Call to Battle
         }
     },
 
     {
-        GroupName = "Threat Transfer",
+        GroupName = "AoE Morale Drain",
         Enabled = true,
         Placement = "right",
         Gambits = {
-            1091469960, -- Impressive Flourish
-            1091471254, -- Maddening Strike
-            1091471266, -- Dance Of War
-            1091478183, -- Conviction
-            1091659455, -- Aggression
-        }
-    },
-
-    {
-        GroupName = "Threat decrease",
-        Enabled = true,
-        Placement = "right",
-        Gambits = {
-            1091659454, -- Deflection
+            1091471255, -- Fierce Resolve
+            1091471249, -- Resolution
+            1091471252, -- Exultation of Battle
         }
     },
 
