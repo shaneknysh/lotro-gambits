@@ -33,7 +33,7 @@ function Settings:_SetDefaults()
         Width = 200,
         Offset = {
             Left = (screenWidth/2) - 450,
-            Right = (screenWidth/2) + 250,
+            Right = (screenWidth/2) + 300,
             Bottom = 80,
         },
         Font = Turbine.UI.Lotro.Font.Verdana10,
