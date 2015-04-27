@@ -1,12 +1,15 @@
 GambitLayout = {
     {
-        GroupName = "Startup",
+        GroupName = "DPS rotation",
         Enabled = true,
         Placement = "left",
         Gambits = {
-            1091471248, -- Shield Mastery
-            1091471266, -- Dance Of War
-            1091471252, -- Exultation of Battle
+            1091478186, -- Desolation
+            1091471244, -- Spear of Virtue
+            1091471245, -- Piercing Strike
+            1091585378, -- Unerring Strike
+            1091471237, -- Surety of Death
+            1091471251, -- Brink of Victory
         }
     },
 
@@ -68,14 +71,6 @@ GambitLayout = {
             1091478098, -- Reversal
             1091478097, -- Adroit Manoeuvre
             1091478187, -- Warden's Triumph
-        }
-    },
-
-    {
-        GroupName = "Power",
-        Enabled = true,
-        Placement = "left",
-        Gambits = {
             1091471253, -- The Dark Before Dawn
         }
     },
