@@ -19,6 +19,7 @@ GambitLayout = {
         Placement = "right",
         Gambits = {
             1091471252, -- Exultation of Battle
+            1091471244, -- Spear of Virtue
             1091471251, -- Brink of Victory
             1091478183, -- Conviction
             1091471248, -- Shield Mastery
