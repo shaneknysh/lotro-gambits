@@ -161,7 +161,7 @@ GambitData = {
         Targets = 6,
         Dmg = "435.4%",
         DoT = 2567,
-        Defence = "evade",
+        Defence = "b/p/e",
     },
     Assailment = {
     },
