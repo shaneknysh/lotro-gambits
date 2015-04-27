@@ -71,9 +71,7 @@ function GambitItem:Constructor(gambitID)
             for k,v in pairs(gambit.Default) do effectsArray[k] = v end
         end
 
-        if currentStance == "Recklessness" and gambit.Recklessness ~= nil then
-            for k,v in pairs(gambit.Recklessness) do effectsArray[k] = v end
-        elseif currentStance == "Determination" and gambit.Determination ~= nil then
+        if currentStance == "Determination" and gambit.Determination ~= nil then
             for k,v in pairs(gambit.Determination) do effectsArray[k] = v end
         elseif currentStance == "Assailment" and gambit.Assailment ~= nil then
             for k,v in pairs(gambit.Assailment) do effectsArray[k] = v end
