@@ -330,7 +330,6 @@ GambitData = {
         Range = "25m",
     },
     Determination = {
-        Transfer = "5TT",
         Finisher = true
     },
 },
@@ -347,7 +346,6 @@ GambitData = {
     Assailment = {
     },
     Determination = {
-        Transfer = "5TT",
     },
 },
 [1091471247] = {
