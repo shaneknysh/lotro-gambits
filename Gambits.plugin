@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Plugin>
+    <Information>
+        <Name>Gambits</Name>
+        <Author>XtreamWayz</Author>
+        <Version>0.7</Version>
+        <Description>Yet another gambit helper</Description>
+    </Information>
+    <Package>XtreamWayz.Gambits.Main</Package>
+    <Configuration Apartment="Gambits" />
+</Plugin>
