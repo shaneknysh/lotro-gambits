@@ -129,22 +129,7 @@ GambitData = {
     },
 },
 
--- Fist 4 ---- TODO
-[1091659455] = {
-    Name = "Aggression",
-    Combo = {3,2,1,3},
-    Default = {
-        Dmg = 1,
-    },
-    Recklessness = {
-        Other = "Dmg,Heal on crit",
-    },
-    Assailment = {
-    },
-    Determination = {
-        Transfer = "5TT",
-    },
-},
+-- Fist 4
 [1091471249] = {
     Name = "Resolution",
     Combo = {3,1,2,3},
@@ -218,26 +203,6 @@ GambitData = {
 },
 
 -- Fist 5
-[1091744834] = {
-    Name = "Call to Battle",
-    Combo = {3,2,3,1,3},
-    Default = {
-        Targets = 6,
-    },
-    Determination = {
-        ToT = "8ToT",
-        Range = "25m",
-    },
-    Recklessness = {
-        DoT = 1,
-        Range = "25m",
-    },
-    Assailment = {
-        DoT = 1,
-        Threat = "-2T",
-        Range = "25m",
-    }
-},
 [1091478186] = {
     Name = "Desolation",
     Combo = {3,2,3,2,3},
@@ -333,21 +298,6 @@ GambitData = {
 },
 
 -- Shield 3
-[1091659454] = {
-    Name = "Deflection",
-    Combo = {2,3,1},
-    Default = {
-        Dmg = 1,
-        Threat = "-3T",
-    },
-    Recklessness = {
-    },
-    Assailment = {
-    },
-    Determination = {
-    },
-},
--- 375.2% MH + bonus
 [1091471254] = {
     Name = "Maddening Strike",
     Combo = {2,3,2},
@@ -386,25 +336,8 @@ GambitData = {
         Defence = "block",
     },
 },
-[1091471257] = {
-    Name = "Shield Up",
-    Combo = {2,1,3},
-    Default = {
-    },
-    Recklessness = {
-        Defence = "reflect",
-        Other = "-5%speed,+5%duration",
-    },
-    Assailment = {
-        Other = "-10%F threat",
-    },
-    Determination = {
-        Defence = "block/evade/ranged",
-    },
-},
 
 -- Shield 4
--- 259.1% MH + bonus
 [1091471258] = {
     Name = "Celebration of Skill",
     Combo = {2,1,2,1},
@@ -441,37 +374,6 @@ GambitData = {
         Transfer = "5TT",
         Defence = "crit/phys",
         Other = "Finisher"
-    },
-},
-[1091471248] = {
-    Name = "Shield Mastery",
-    Combo = {2,1,3,2},
-    Default = {
-    },
-    Determination = {
-        Defence = "block/evade/ranged",
-    },
-    Recklessness = {
-        Defence = "reflect",
-        Other = "-15%speed,+15%duration",
-    },
-    Assailment = {
-        Defence = "evade",
-        Other = "-20%F threat",
-    }
-},
-[1091659503] = {
-    Name = "Shield Tactics",
-    Combo = {2,3,1,2},
-    Default = {
-        Defence = "tact",
-        Special = "10s stun immunity",
-    },
-    Determination = {
-    },
-    Recklessness = {
-    },
-    Assailment = {
     },
 },
 
