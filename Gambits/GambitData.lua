@@ -230,7 +230,29 @@ GambitData = {
     Determination = {
     },
 },
--- 251.9% MH + bonus
+[1091471248] = {
+    Name = "Shield Mastery",
+    Combo = {2,1,3,2},
+    Default = {
+        Defence = "block/evade/ranged",
+    },
+    Assailment = {
+    },
+    Determination = {
+    },
+},
+[1091659503] = {
+    Name = "Shield Tactics",
+    Combo = {2,3,1,2},
+    Default = {
+        Defence = "tactical",
+        Special = "+stun immunity",
+    },
+    Assailment = {
+    },
+    Determination = {
+    },
+},
 [1091469964] = {
     Name = "Persevere",
     Combo = {2,1},
