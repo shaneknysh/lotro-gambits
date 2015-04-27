@@ -14,6 +14,7 @@ GambitItem.EffectsOrder = {
     "Heal",
     "HoT",
     "Interrupt",
+    "Finisher",
     "Daze",
     "Fear",
     "Knockout",
@@ -128,6 +129,8 @@ function GambitItem:SetEffectsLabel(gambit)
             -- Specials
             elseif effect == "Interrupt" then
                 self.effects:AppendText("<rgb=#AA66CC>Interr.</rgb>");
+            elseif effect == "Finisher" then
+                self.effects:AppendText("<rgb=#FFFFFF>F</rgb>");
             elseif effect == "Daze" or effect == "Fear" or effect == "Root" or effect == "Knockout" then
                 self.effects:AppendText("<rgb=#AA66CC>" .. gambit[effect] .. "s " .. effect .. "</rgb>");
             elseif effect == "Special" then

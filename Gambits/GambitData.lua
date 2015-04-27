@@ -162,12 +162,12 @@ GambitData = {
         Dmg = "435.4%",
         DoT = 2567,
         Defence = "evade",
-        Other = "Finisher"
     },
     Assailment = {
     },
     Determination = {
         Threat = "3T",
+        Finisher = true
     },
 },
 
@@ -179,11 +179,12 @@ GambitData = {
         Targets = 6,
         Dmg = 2838,
         DoT = 2838,
-        Other = "+5% miss/Finisher"
+        Other = "+5% miss"
     },
     Assailment = {
     },
     Determination = {
+        Finisher = true
     },
 },
 [1091471252] = {
@@ -315,7 +316,8 @@ GambitData = {
     Determination = {
         Threat = "2T",
         Defence = "block",
-        Other = "+3.5% heal/Finisher",
+        Other = "+3.5% heal",
+        Finisher = true
     },
 },
 [1091471266] = {
@@ -329,7 +331,7 @@ GambitData = {
     },
     Determination = {
         Transfer = "5TT",
-        Other = "Finisher"
+        Finisher = true
     },
 },
 
@@ -353,7 +355,6 @@ GambitData = {
     Combo = {2,1,2,1,2},
     Default = {
         HoT = 1511,
-        Other = "Finisher",
     },
     Assailment = {
         Dmg = "251.6%",
@@ -362,6 +363,7 @@ GambitData = {
     Determination = {
         Dmg = "454.7%",
         Threat = "2T",
+        Finisher = true
     },
 },
 
