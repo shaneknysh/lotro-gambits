@@ -162,6 +162,7 @@ GambitData = {
         Dmg = "435.4%",
         DoT = 2567,
         Defence = "evade",
+        Other = "Finisher"
     },
     Assailment = {
     },
@@ -178,7 +179,7 @@ GambitData = {
         Targets = 6,
         Dmg = 2838,
         DoT = 2838,
-        Other = "+5% miss"
+        Other = "+5% miss/Finisher"
     },
     Assailment = {
     },
