@@ -55,6 +55,16 @@ GambitWindows = {};
 heightLeft = nil;
 heightRight = nil;
 currentStance = nil;
+currentCombatState = nil;
+
+-- should be exposed as an option
+hideOutOfCombat = false;
+
+-- offset the placement of the gambit windows.
+-- higher values move the gambit windows up
+userBufferV = 0;
+-- higher values move the gambit windows away from the center of the screen
+userBufferH = 0;
 
 Core.Start();
 
@@ -87,8 +97,8 @@ function ConstructWindows()
 
     -- Create gambit windows
     GambitWindows = {};
-    heightLeft = Settings.Window.Offset.Bottom;
-    heightRight = Settings.Window.Offset.Bottom;
+    heightLeft = Settings.Window.Offset.Bottom + userBufferV;
+    heightRight = Settings.Window.Offset.Bottom + userBufferV;
 
     -- Construct each gambit window
     for i = 1, #GambitLayout do
@@ -174,11 +184,17 @@ Turbine.Gameplay.ClassAttributes.StanceChanged = function(sender, args)
     ConstructWindows();
     PositionWindows();
     Core.DetectMount();
+    Core.DetectCombat();
 end
 
 -- Register callback function for mount changes
 player.MountChanged = function (sender, args)
     Core.DetectMount();
+end
+
+-- Register callback function for mount changes
+player.InCombatChanged = function (sender, args)
+    Core.DetectCombat();
 end
 
 -- Plugin unload handler
@@ -194,6 +210,7 @@ DetectStance();
 ConstructWindows();
 PositionWindows();
 Core.DetectMount();
+Core.DetectCombat();
 
 -- Load message
 Turbine.Shell.WriteLine(plugin:GetName() .. " v" .. plugin:GetVersion() .. " by " .. plugin:GetAuthor());

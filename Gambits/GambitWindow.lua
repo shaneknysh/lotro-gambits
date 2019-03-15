@@ -32,10 +32,11 @@ function GambitWindow:Constructor(window)
     self:SetSize(Settings.Window.Width, self.gambits:GetHeight() + 20);
 
     -- Set left position
+    -- userBufferH is a global value set in Main.lua
     if self.Placement == "left" then
-        self:SetLeft(Settings.Window.Offset.Left);
+        self:SetLeft(Settings.Window.Offset.Left - userBufferH);
     elseif self.Placement == "right" then
-        self:SetLeft(Settings.Window.Offset.Right);
+        self:SetLeft(Settings.Window.Offset.Right + userBufferH);
     end
 
     -- Set temp top position

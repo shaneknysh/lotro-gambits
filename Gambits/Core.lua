@@ -56,6 +56,12 @@ function Core.SetHudVisibility(visible)
         visible = false;
     end
 
+    -- Force visibility to false when out of combat
+    local inCombat = player:IsInCombat();
+    if (player:IsInCombat() ~= true and hideOutOfCombat) then
+        visible = false;
+    end
+
     -- Update windows
     for i = 1, #GambitWindows do
         GambitWindows[i]:SetVisible(visible);
@@ -69,5 +75,15 @@ function Core.DetectMount()
     else
         -- Mounted
         Core.SetHudVisibility(false);
+    end
+end
+
+function Core.DetectCombat()
+    if (player:IsInCombat() ~= true and hideOutOfCombat) then
+      -- Not in Combat
+      Core.SetHudVisibility(false);
+    else
+      -- In Combat
+      Core.SetHudVisibility(true);
     end
 end
